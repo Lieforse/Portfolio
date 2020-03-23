@@ -87,7 +87,15 @@ $(function() {
     $.ajax({
       url: "https://formspree.io/xwkqbrlk",
       method: "POST",
-      data: { message: $("form").serialize() },
+      data: {
+        message:
+          "Name: " +
+          $("form").serializeArray()[0]["value"] +
+          "\n" + "E-mail: " +
+          $("form").serializeArray()[1]["value"] +
+          "\n" + "Message text: " +
+          $("form").serializeArray()[2]["value"]
+      },
       dataType: "json"
     }).done(function(response) {
       $(".success-container").addClass("expand");
@@ -103,14 +111,4 @@ $(function() {
   $("#close").click(function() {
     $(".success-container").removeClass("expand");
   });
-
-  /* $(function(){
-    if(setTimeout(2000)){
-      $(".success-container").removeClass("expand");
-    }else {
-      $("#close").click(function() {
-        $(".success-container").removeClass("expand");
-      });
-    }
-  }) */
 });

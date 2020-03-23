@@ -363,7 +363,7 @@ body {
 .intro {
   top: 80px;
   height: 1000px;
-  background-image: url(../images/intro-bg2.jpg);
+  background-image: url(../images/intro-bg.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1054,7 +1054,7 @@ footer .container {
 }
 footer .copyright {
   font-family: "Raleway";
-  font-size: 15px;
+  font-size: 16px;
   color: #8f9aa7;
   text-transform: uppercase;
 }
