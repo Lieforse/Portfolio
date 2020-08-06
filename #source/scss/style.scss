@@ -241,7 +241,7 @@ section.about {
   }
 
   .hard-skills-content {
-    max-width: 500px;
+    max-width: 480px;
     h4 {
       @media screen and (max-width: 767px) {
         margin-top: 80px;
@@ -256,17 +256,16 @@ section.about {
   }
 
   .hard-skills-items {
-    @media screen and (max-width: 767px) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     .hard-skills-item {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 5%;
       align-items: center;
+      justify-content: center;
       margin: 15px auto;
       padding: 0 20px;
 
@@ -484,6 +483,7 @@ section.portfolio {
 
         opacity: 0;
         visibility: hidden;
+        display: none;
 
         transition: all 0.3s;
         transform: scale(0.8);
@@ -493,6 +493,7 @@ section.portfolio {
         &.active {
           opacity: 1;
           visibility: visible;
+          display: block;
           transform: scale(1);
         }
 
@@ -674,6 +675,7 @@ section.portfolio {
       min-height: 150px;
       outline: none;
       box-sizing: border-box;
+      resize: none;
 
       border: none;
 

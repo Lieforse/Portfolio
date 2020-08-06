@@ -7,18 +7,18 @@
   color: $title-color;
   text-transform: uppercase;
 
-  height: 50px;
+  height: 45px;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
   margin: 0 auto 110px;
 
   &::after {
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    bottom: 0;
     content: "";
     display: block;
-    width: 4rem;
+    width: 5rem;
     height: 4px;
 
     background-color: $title-color;
